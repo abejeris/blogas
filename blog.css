@@ -26,7 +26,7 @@
   #h2 {
     margin: 20px;
   }
-  
+
   header ul {
     list-style: none;
     display: flex;
@@ -62,9 +62,15 @@
   }
   input {
     width: 60%;
-    height: 20px;
+    height: 25px;
     font-size: 20px;
-    color: rgb(150, 162, 163);
+    color: rgb(100, 100, 100);
+    font-family: "Exo 2";
+  }
+
+  input::placeholder {
+    color: rgb(192, 192, 192);
+    font-family: "Exo 2";
   }
   button {
     margin: 20px;
