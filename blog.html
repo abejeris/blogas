@@ -22,8 +22,16 @@
     <script defer src="blog.js"></script>
   </head>
   <body>
-    <h1>Blog</h1>
-    <h2>Create your Blog Here</h2>
+    
+    <header>
+      <h1>Blog</h1>
+      <h2>Here you can post edit or delete your blog</h2>
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="#About">About</a></li>
+      </ul>
+    </header>
     <form id="add-post">
       <div class="form-field">
         <label for="title" id="title">Title</label>
@@ -39,7 +47,7 @@
       </div>
       <button type="submit">Add Post</button>
     </form>
-    <h2>All Posts</h2>
+    <h2 id="h2">All Posts</h2>
     <div id="posts" class="posts"></div>
     <section id="#About">
       <footer>

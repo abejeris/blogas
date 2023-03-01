@@ -10,8 +10,11 @@
   }
   
   header {
-    padding: 20px;
+    padding: 20px 20px 0 20px;
     background-color: rgb(113, 139, 151);
+    position: fixed;
+  top: 0;
+  width: 100%;
   }
   header h1 {
     font-size: 60px;
@@ -19,11 +22,12 @@
   header h2 {
     font-size: 22px;
   }
+
   header ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
-    margin: 20px -20px;
+    margin: 20px -20px -20px -20px;
     font-size: 20px;
     background-color: rgb(118, 152, 154);
     line-height: 60px;
@@ -54,13 +58,13 @@
   
   article {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 880px;
-    background-color: gray;
-    
   }
   
   article img {
-    width: 30%;
+    width: 100%;
     object-fit: cover;
   }
   #textContainer {
@@ -129,7 +133,8 @@
     flex-direction: column;
     height: 124px;
     padding-top: 30px;
-  }
+    width: 100%;
+    }
   footer .social {
     display: flex;
     justify-content: space-evenly;
