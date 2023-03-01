@@ -99,6 +99,10 @@
     object-fit: cover;
   } */
 
+  #About {
+    margin-top: 250px;
+    text-align: center;
+  }
   #posts {
     display: flex;
     flex-direction: column;
