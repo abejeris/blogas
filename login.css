@@ -1,10 +1,48 @@
-body {
+* {
+    padding: 0;
+    margin: 0;
+}
+    body {
         background-color: rgb(150, 162, 163);
         color: white;
         font-family: "Exo 2", sans-serif;
       }
 
-
+      header {
+        padding: 20px 20px 0 20px;
+        background-color: rgb(113, 139, 151);
+        position: fixed;
+      top: 0;
+      width: 100%;
+      }
+      header h1 {
+        font-size: 60px;
+      }
+      header h2 {
+        font-size: 22px;
+      }
+    
+      header ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        margin: 20px -20px -20px -20px;
+        font-size: 20px;
+        background-color: rgb(118, 152, 154);
+        line-height: 60px;
+      }
+      header ul li a {
+        text-decoration: none;
+      }
+      
+      header ul li a:visited,
+      a:link {
+        color: white;
+      }
+      
+      header ul li a:hover {
+        color: rgb(58, 78, 91);
+      }
 /* Full-width input fields */
 input[type=text], input[type=password] {
   width: 100%;
@@ -14,7 +52,9 @@ input[type=text], input[type=password] {
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
-
+#h22 {
+    margin-top: 350px;
+}
 /* Set a style for all buttons */
 button {
   background-color: #04AA6D;
