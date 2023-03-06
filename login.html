@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Login form</title>
+		<link rel="stylesheet" href="login.css" />
+		<script defer src="login.js"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+	</head>
+	<body>
+		<h2>Sign Up with a click of a button!</h2>
+
+		<button
+			onclick="document.getElementById('id01').style.display='block'"
+			style="width: auto"
+		>
+			Sign Up
+		</button>
+
+		<div id="id01" class="modal">
+			<form class="modal-content animate" action="" method="post">
+				<div class="container">
+					<label for="uname"><b>Username</b></label>
+					<input
+						type="text"
+						placeholder="Enter Username"
+						name="name"
+						required
+						id="uname"
+					/>
+
+					<label for="email"><b>Email Address</b></label>
+					<input
+						type="text"
+						placeholder="Enter email"
+						name="email"
+						required
+						id="email"
+					/>
+
+					<button type="submit">Sign Up</button>
+				</div>
+
+				<div class="container" style="background-color: #f1f1f1">
+					<button
+						type="button"
+						onclick="document.getElementById('id01').style.display='none'"
+						class="cancelbtn"
+					>
+						Cancel
+					</button>
+				</div>
+			</form>
+		</div>
+		<h2>...or simply Log in here</h2>
+		<h2></h2>
+		<form
+			id="login"
+			action="https://testapi.io/api/audriusb/resource/login/"
+			method="get"
+		>
+			<label for="name">Username:</label>
+			<input id="vardas" type="text" name="name" placeholder="Your user name" />
+			<label for="email">Email Address:</label>
+			<input
+				id="meilas"
+				type="text"
+				name="email"
+				placeholder="Your email address"
+			/>
+			<button id="submitas" type="submit">Submit</button>
+		</form>
+	</body>
+</html>
